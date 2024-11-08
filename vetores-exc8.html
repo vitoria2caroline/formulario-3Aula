@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numeros = []; 
+    let somaPares = 0; 
+    let somaImpares = 0; 
+    let countPares = 0; 
+    let countImpares = 0; 
+    for (let i = 0; i < 5; i++) 
+    { let numero = parseInt(prompt("Digite um número inteiro:")); 
+    numeros.push(numero); 
+    if (numero % 2 === 0) 
+    { somaPares += numero; countPares++; }
+    else { somaImpares += numero; countImpares++; } } 
+    let mediaPares = countPares > 0 ? somaPares / countPares : 0; let mediaImpares = countImpares > 0 ? somaImpares / countImpares : 0;
+    document.write("A média dos valores pares é: " + mediaPares.toFixed(2) + "<br>"); document.write("A média dos valores ímpares é: " + mediaImpares.toFixed(2));
+    </script>
+</body>
+</html>

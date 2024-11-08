@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+         let cont = 1; 
+         let soma = 0;  
+        do { let numero = parseInt(prompt("Digite um número inteiro")); 
+        numeros.pus(numero);  
+        soma = soma + numero; cont++; } 
+        while (cont <= 7); 
+        let media = soma / 7;  
+        document.write("Os números digitados são: <br>"); 
+        for (let i = 0; i < numeros.length; i++) 
+        { document.write(numeros[i] + "<br>"); }  
+        document.write("A média aritmética dos números é: " + media.toFixed(2))
+    </script>
+</body>
+</html>

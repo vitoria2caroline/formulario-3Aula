@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = []; let cont = 1; let encontradoZero = false; 
+        do { let numero = parseInt(prompt("Digite um número inteiro:")); numeros.push(numero); 
+        cont++; } while (cont <= 5); 
+        for (let i = 0; i < numeros.length; i++) { if (numeros[i] === 0)encontradoZero = true; break; } 
+    if (encontradoZero) { document.write("Há pelo menos um número igual a zero."); } else { document.write("Não há números iguais a zero."); }
+    </script>
+</body>
+</html>

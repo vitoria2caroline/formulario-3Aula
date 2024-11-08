@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Crie um programa que leia duas matrizes 2x2 de números inteiros e exiba a subtração entre elas.*/
+
+        let primeiraMatriz = [];
+        let segundaMatriz = []; 
+        let matrizResultado = [];
+        for (let linha = 0; linha < 2; linha++) 
+        { primeiraMatriz[linha] = []; 
+        for (let coluna = 0; coluna < 2; coluna++)
+        { primeiraMatriz[linha][coluna] = parseInt(prompt('Digite o elemento [' + linha + '][' + coluna + '] da primeira matriz:')); } } 
+        for (let linha = 0; linha < 2; linha++)
+        { segundaMatriz[linha] = []; 
+        for (let coluna = 0; coluna < 2; coluna++)
+        { segundaMatriz[linha][coluna] = parseInt(prompt('Digite o elemento [' + linha + '][' + coluna + '] da segunda matriz:')); } } 
+        for (let linha = 0; linha < 2; linha++)
+        { matrizResultado[linha] = []; 
+        for (let coluna = 0; coluna < 2; coluna++) 
+        { matrizResultado[linha][coluna] = primeiraMatriz[linha][coluna] - segundaMatriz[linha][coluna]; } } 
+         document.write('A subtração das duas matrizes 2x2 é: <br>'); 
+         for (let linha = 0; linha < 2; linha++) { 
+         for (let coluna = 0; coluna < 2; coluna++) { document.write(matrizResultado[linha][coluna] + ' '); } document.write('<br>'); }
+    </script>
+</body>
+</html>

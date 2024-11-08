@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let matriz = []; let maioresValoresPorLinha = [];
+        for (let linha = 0; linha < 4; linha++) { matriz[linha] = []; for (let coluna = 0; coluna < 4; coluna++) { matriz[linha][coluna] = parseInt(prompt('Digite o elemento [' + linha + '][' + coluna + '] da matriz:')); } }
+        for (let linha = 0; linha < 4; linha++) { let maiorValorNaLinha = matriz[linha][0]; for (let coluna = 1; coluna < 4; coluna++) { if (matriz[linha][coluna] > maiorValorNaLinha) { maiorValorNaLinha = matriz[linha][coluna]; } } maioresValoresPorLinha.push(maiorValorNaLinha); } 
+        document.write('O maior valor presente em cada linha é:<br>');
+        for (let linha = 0; linha < 4; linha++) { document.write('Linha ' + (linha + 1) + ': ' + maioresValoresPorLinha[linha] + '<br>'); }
+    </script>
+</body>
+</html>

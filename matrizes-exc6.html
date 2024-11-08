@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let matriz1 = [];
+        let matriz2 = [];
+        let matrizProduto = []; 
+        for (let i = 0; i < 2; i++)
+       { matriz1[i] = []; for (let j = 0; j < 2; j++) 
+       { matriz1[i][j] = parseInt(prompt(`Digite a  [${i}][${j}] primeira matriz:`)); } } 
+        for (let i = 0; i < 2; i++) 
+        { matriz2[i] = []; for (let j = 0; j < 2; j++)
+        { matriz2[i][j] = parseInt(prompt(`Digite o elemento [${i}][${j}] da segunda matriz:`)); } } 
+        for (let i = 0; i < 2; i++) 
+        { matrizProduto[i] = [];
+         for (let j = 0; j < 2; j++)
+         { matrizProduto[i][j] = matriz1[i][0] * matriz2[0][j] + matriz1[i][1] * matriz2[1][j]; } } 
+         document.write("O produto das duas matrizes 2x2 é: <br>");
+         for (let i = 0; i < 2; i++) { for (let j = 0; j < 2; j++) 
+        { document.write(matrizProduto[i][j] + " "); } document.write("<br>"); }
+    </script>
+</body>
+</html>

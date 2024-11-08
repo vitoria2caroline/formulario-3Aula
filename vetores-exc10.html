@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Escreva um programa que leia 10 números inteiros e exiba a soma dos valores positivos e a soma dos valores negativos.*/
+
+        let numeros = []; 
+        let somaPositivos = 0;
+        let somaNegativos = 0; 
+        for (let i = 0; i < 10; i++) { let numero = parseInt(prompt("Digite um número inteiro:")); numeros.push(numero); 
+        if (numero > 0) { somaPositivos += numero;} else if (numero < 0) { somaNegativos += numero;} } 
+        document.write("A soma dos valores positivos é: " + somaPositivos + "<br>"); 
+        document.write("A soma dos valores negativos é: " + somaNegativos);
+    </script>
+</body>
+</html>

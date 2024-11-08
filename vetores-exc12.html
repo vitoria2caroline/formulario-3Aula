@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que leia 10 números inteiros e exiba quantos deles estão no intervalo de 10 a 50.*/
+
+let numeros = []; let countIntervalo = 0; 
+for (let i = 0; i < 10; i++) { let numero = parseInt(prompt("Digite um número inteiro:")); numeros[i] = numero;} 
+for (let i = 0; i < numeros.length; i++) { if (numeros[i] >= 10 && numeros[i] <= 50) { countIntervalo++; } }
+document.write("A quantidade de números no intervalo de 10 a 50 é: " + countIntervalo);
+    </script>
+</body>
+</html>

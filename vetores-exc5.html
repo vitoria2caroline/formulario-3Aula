@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let numeros = []; let cont = 1;  
+     do { let numero = parseInt(prompt("Digite um número inteiro")); numeros.push(numero);  
+     cont++; } while (cont <= 5);  
+     let maior = numeros[0]; let menor = numeros[0]; 
+     for (let i = 1; i < numeros.length; i++) 
+     { if (numeros[i] > maior) { maior = numeros[i]; } if (numeros[i] < menor) { menor = numeros[i]; } }
+     document.write("O maior valor digitado é: " + maior + "<br>"); document.write("O menor valor digitado é: " + menor);
+    </script>
+</body>
+</html>

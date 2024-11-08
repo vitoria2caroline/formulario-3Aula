@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Crie um programa que leia uma matriz 3x3 de números inteiros e verifique se ela é simétrica (igual à sua transposta).*/
+        let matriz = []; let simetrica = true; 
+        for (let linha = 0; linha < 3; linha++) 
+        { matriz[linha] = []; 
+        for (let coluna = 0; coluna < 3; coluna++)
+        { matriz[linha][coluna] = parseInt(prompt(`Digite o elemento [${linha}][${coluna}] da matriz:`)); } } 
+        for (let linha = 0; linha < 3; linha++) 
+        { for (let coluna = 0; coluna < 3; coluna++)
+        { if (matriz[linha][coluna] !== matriz[coluna][linha]) { simetrica = false; break; } } 
+        if (!simetrica) break; } 
+        if (simetrica) { document.write("A matriz é simétrica."); } 
+        else { document.write("A matriz não é simétrica."); }
+    </script>
+</body>
+</html>
